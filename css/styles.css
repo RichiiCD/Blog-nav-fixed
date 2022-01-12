@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-1{
+    width: 100%;
+    float: left;
+}
+
+.column-2{
+    width: 50%;
+    float: left;
+}
+
+.column-3{
+    width: 33.33%;
+    float: left;
+}
+
+.column-4{
+    width: 25%;
+    float: left;
+}
+
+.column-5{
+    width: 20%;
+    float: left;
+}
+
+.column-6{
+    width: 16.66%;
+    float: left;
+}
+
+.column-nav{
+    width: 25%;
+    position: fixed;
+    float: left;
+}
+
+.column-75{
+    width: 75%;
+    float: left;
+    margin-left: 25%;
+}
+
+
+header {
+    height: 100vh;
+    background-image: url("../img/tierra.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-1 {
+    background-image: url("../img/bosque.jpg");
+}
+
+#card-2 {
+    background-image: url("../img/montaña.jpg");
+}
+
+#card-3 {
+    background-image: url("../img/mar.jpg");
+}
+
+#card-4 {
+    background-image: url("../img/section1.jpg");
+}
+
+#card-5 {
+    background-image: url("../img/section2.jpg");
+}
+
+#card-6 {
+    background-image: url("../img/section3.jpg");
+}
+
+#card-7 {
+    background-image: url("../img/section4.jpg");
+}
+
+
+
+
+.padding-s {
+    padding: 1%;
+}
+
+img {
+    width: 100%;
+}
+
+article {
+    background-color: rgb(194, 185, 185);
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+#prefooter {
+    background-color: rgb(48, 46, 46);
+    margin-top: -4px;
+}
+
+
+footer {
+    background-color: rgb(34, 32, 32);
+    color: white;
+    margin: 0;
+    padding-top: 50px;
+}
+
+footer h4 {
+    margin-bottom: 40px;
+}
+
+
+.back-white {
+    background-color: white;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+/*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3{
+        width: 100%;
+    }
+
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4{
+        width: 50%;
+    }
+
+    #caja-10{
+        width: 100%;
+    }
+    
+    .column-nav, .column-75{
+        width: 100%;
+        margin-left: 0;
+        background-color: white;
+    }
+
+    .column-75 {
+        margin-top: 20vh;
+        
+    }
+    
+}
